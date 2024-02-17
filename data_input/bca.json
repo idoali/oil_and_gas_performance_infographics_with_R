@@ -1,0 +1,566 @@
+{
+    "symbol": "BBCA.JK",
+    "nologo": false,
+    "company_name": "PT Bank Central Asia Tbk.",
+    "listing_board": "Main",
+    "industry": "Banks",
+    "sub_industry": "Banks",
+    "sector": "Financials",
+    "sub_sector": "Banks",
+    "market_cap": 1195767482023936,
+    "market_cap_rank": 1,
+    "address": "Menara BCA, Grand Indonesia\r\nJalan MH Thamrin No. 1\r\nJakarta 10310",
+    "employee_num": 26309,
+    "listing_date": "2000-05-31",
+    "website": "www.bca.co.id",
+    "phone": "021-23588000",
+    "email": "investor_relations@bca.co.id",
+    "last_close_price": 9700,
+    "latest_close_date": "2024-02-07",
+    "daily_close_change": 0.00779220779220779,
+    "forward_pe": 22.4490270133787,
+    "enterprise_to_revenue": null,
+    "enterprise_to_ebitda": 0.0,
+    "peg_ratio": 2.04161300600113,
+    "analyst_rating": 69.9999988079071,
+    "price_cash_flow": 21.822329833099275,
+    "interest_coverage_ratio": null,
+    "der_mrq": 0.0422901540524709,
+    "cash_flow_debt_ratio": 5.491846657711965,
+    "employee_num_rank": 15,
+    "key_executives": [
+        {
+            "name": "Jahja Setiaatmadja",
+            "position": "President Director"
+        },
+        {
+            "name": "Armand Wahyudi Hartono",
+            "position": "Vice President Director"
+        },
+        {
+            "name": "Gregory Hendra Lembong",
+            "position": "Vice President Director"
+        },
+        {
+            "name": "Tan Ho Hien/Subur Atau Dipanggil Subur Tan",
+            "position": "Director"
+        },
+        {
+            "name": "Rudy Susanto",
+            "position": "Director"
+        },
+        {
+            "name": "Lianawaty Suwono",
+            "position": "Director"
+        },
+        {
+            "name": "Santoso",
+            "position": "Director"
+        },
+        {
+            "name": "Vera Eve Lim",
+            "position": "Director"
+        },
+        {
+            "name": "Haryanto Tiara Budiman",
+            "position": "Director"
+        },
+        {
+            "name": "Frengky Chandra Kusuma",
+            "position": "Director"
+        },
+        {
+            "name": "John Kosasih",
+            "position": "Director"
+        },
+        {
+            "name": "Antonius Widodo Mulyono",
+            "position": "Director"
+        }
+    ],
+    "executives_shareholdings": [
+        {
+            "name": "Antonius Widodo Mulyono",
+            "position": "Director",
+            "share_amount": 130780,
+            "share_percentage": 0
+        },
+        {
+            "name": "Armand Wahyudi Hartono",
+            "position": "Vice President Director",
+            "share_amount": 4256065,
+            "share_percentage": 0
+        },
+        {
+            "name": "Djohan Emir Setijoso",
+            "position": "President Commissioner",
+            "share_amount": 106610700,
+            "share_percentage": 0.0009
+        },
+        {
+            "name": "Frengky Chandra Kusuma",
+            "position": "Director",
+            "share_amount": 1891049,
+            "share_percentage": 0
+        },
+        {
+            "name": "Gregory Hendra Lembong",
+            "position": "Vice President Director",
+            "share_amount": 784719,
+            "share_percentage": 0
+        },
+        {
+            "name": "Haryanto Tiara Budiman",
+            "position": "Director",
+            "share_amount": 561695,
+            "share_percentage": 0
+        },
+        {
+            "name": "Jahja Setiaatmadja",
+            "position": "President Director",
+            "share_amount": 32818853,
+            "share_percentage": 0.0003
+        },
+        {
+            "name": "John Kosasih",
+            "position": "Director",
+            "share_amount": 504861,
+            "share_percentage": 0
+        },
+        {
+            "name": "Lianawaty Suwono",
+            "position": "Director",
+            "share_amount": 2021880,
+            "share_percentage": 0
+        },
+        {
+            "name": "Rudy Susanto",
+            "position": "Director",
+            "share_amount": 2518448,
+            "share_percentage": 0
+        },
+        {
+            "name": "Santoso",
+            "position": "Director",
+            "share_amount": 2422053,
+            "share_percentage": 0
+        },
+        {
+            "name": "Tan Ho Hien/Subur Disebut Juga Subur Tan",
+            "position": "Director",
+            "share_amount": 12351057,
+            "share_percentage": 0.0001
+        },
+        {
+            "name": "Tonny Kusnadi",
+            "position": "Commissioner",
+            "share_amount": 7087982,
+            "share_percentage": 0.0001
+        },
+        {
+            "name": "Vera Eve Lim",
+            "position": "Director",
+            "share_amount": 1912261,
+            "share_percentage": 0
+        }
+    ],
+    "major_shareholders": [
+        {
+            "name": "Pt Dwimuria Investama Andalan",
+            "share_value": 656980515000000,
+            "share_amount": 67729950000,
+            "share_percentage": "0.5494"
+        },
+        {
+            "name": "Public (Scripless)",
+            "share_value": 507075708304900,
+            "share_amount": 52275846217,
+            "share_percentage": "0.4241"
+        },
+        {
+            "name": "Pihak Afiliasi Pengendali",
+            "share_value": 29361681750000,
+            "share_amount": 3026977500,
+            "share_percentage": "0.0246"
+        },
+        {
+            "name": "Djohan Emir Setijoso",
+            "share_value": 1034123790000,
+            "share_amount": 106610700,
+            "share_percentage": "0.0009"
+        },
+        {
+            "name": "Jahja Setiaatmadja",
+            "share_value": 318342874100,
+            "share_amount": 32818853,
+            "share_percentage": "0.0003"
+        },
+        {
+            "name": "Robert Budi Hartono",
+            "share_value": 272909500000,
+            "share_amount": 28135000,
+            "share_percentage": "0.0002"
+        },
+        {
+            "name": "Bambang Hartono",
+            "share_value": 262142500000,
+            "share_amount": 27025000,
+            "share_percentage": "0.0002"
+        },
+        {
+            "name": "Tonny Kusnadi",
+            "share_value": 68753425400,
+            "share_amount": 7087982,
+            "share_percentage": "0.0001"
+        },
+        {
+            "name": "Public (Scrip)",
+            "share_value": 109065636000,
+            "share_amount": 11243880,
+            "share_percentage": "0.0001"
+        },
+        {
+            "name": "Tan Ho Hien/Subur Disebut Juga Subur Tan",
+            "share_value": 119805252900,
+            "share_amount": 12351057,
+            "share_percentage": "0.0001"
+        }
+    ],
+    "ownership_percentage": {
+        "Others": 0.2242,
+        "Insiders": 0.581,
+        "Institutions": 0.1948
+    },
+    "historical_valuation": [
+        {
+            "pb": 4.475852894277,
+            "pe": 30.4530861602451,
+            "ps": 11.3386964329326,
+            "year": 2020,
+            "pb_peer_avg": 1.26242482560343,
+            "pe_peer_avg": 27.296475059198,
+            "ps_peer_avg": 6.37891855078523
+        },
+        {
+            "pb": 4.39493296430937,
+            "pe": 28.3524373811765,
+            "ps": 11.4028644028555,
+            "year": 2021,
+            "pb_peer_avg": 1.46630589795505,
+            "pe_peer_avg": 15.0145590632269,
+            "ps_peer_avg": 6.3740557278722
+        },
+        {
+            "pb": 4.72115003747694,
+            "pe": 25.6154045827394,
+            "ps": 11.7267911271968,
+            "year": 2022,
+            "pb_peer_avg": 1.00852386298116,
+            "pe_peer_avg": 15.1292552726864,
+            "ps_peer_avg": 4.34357834686358
+        },
+        {
+            "pb": 5.0721627756353,
+            "pe": 24.8076634326329,
+            "ps": 12.1428739262136,
+            "year": 2023,
+            "pb_peer_avg": 0.849979104951953,
+            "pe_peer_avg": 14.162045059944,
+            "ps_peer_avg": 4.14667018262304
+        }
+    ],
+    "historical_financials": [
+        {
+            "tax": 6854404000000,
+            "year": 2018,
+            "revenue": 63028090000000,
+            "earnings": 25855154000000,
+            "cash_only": null,
+            "total_debt": 9375812000000,
+            "fixed_assets": null,
+            "gross_profit": null,
+            "total_assets": 824787944000000,
+            "total_equity": 151753427000000,
+            "operating_pnl": 32512504000000,
+            "total_liabilities": 673034517000000,
+            "current_liabilities": null,
+            "earnings_before_tax": 32706064000000,
+            "cash_and_equivalents": null,
+            "total_cash_and_due_from_banks": 65239752000000
+        },
+        {
+            "tax": 7719024000000,
+            "year": 2019,
+            "revenue": 71602009000000,
+            "earnings": 28565053000000,
+            "cash_only": null,
+            "total_debt": 11011116000000,
+            "fixed_assets": null,
+            "gross_profit": null,
+            "total_assets": 918989312000000,
+            "total_equity": 174143156000000,
+            "operating_pnl": 36300870000000,
+            "total_liabilities": 744846156000000,
+            "current_liabilities": null,
+            "earnings_before_tax": 36288998000000,
+            "cash_and_equivalents": null,
+            "total_cash_and_due_from_banks": 99639894000000
+        },
+        {
+            "tax": 6421398000000,
+            "year": 2020,
+            "revenue": 72867812000000,
+            "earnings": 27131109000000,
+            "cash_only": null,
+            "total_debt": 12881754000000,
+            "fixed_assets": null,
+            "gross_profit": null,
+            "total_assets": 1075570256000000,
+            "total_equity": 184714709000000,
+            "operating_pnl": 33570282000000,
+            "total_liabilities": 890855547000000,
+            "current_liabilities": null,
+            "earnings_before_tax": 33568507000000,
+            "cash_and_equivalents": null,
+            "total_cash_and_due_from_banks": 90206272000000
+        },
+        {
+            "tax": 7401015000000,
+            "year": 2021,
+            "revenue": 78130281000000,
+            "earnings": 31422660000000,
+            "cash_only": null,
+            "total_debt": 12384014000000,
+            "fixed_assets": null,
+            "gross_profit": null,
+            "total_assets": 1228344680000000,
+            "total_equity": 202848934000000,
+            "operating_pnl": 38921015000000,
+            "total_liabilities": 1025495746000000,
+            "current_liabilities": null,
+            "earnings_before_tax": 38841174000000,
+            "cash_and_equivalents": null,
+            "total_cash_and_due_from_banks": 158631551000000
+        },
+        {
+            "tax": 9711461000000,
+            "year": 2022,
+            "revenue": 88981034000000,
+            "earnings": 40735722000000,
+            "cash_only": null,
+            "total_debt": 10298288000000,
+            "fixed_assets": null,
+            "gross_profit": null,
+            "total_assets": 1314731674000000,
+            "total_equity": 221181655000000,
+            "operating_pnl": 50482669000000,
+            "total_liabilities": 1093550019000000,
+            "current_liabilities": null,
+            "earnings_before_tax": 50467033000000,
+            "cash_and_equivalents": null,
+            "total_cash_and_due_from_banks": 144146172000000
+        }
+    ],
+    "self_financial_info": {
+        "pb_mrq": 5.0721627756353,
+        "pe_ttm": 24.8076634326329,
+        "symbol": "BBCA.JK",
+        "dar_mrq": 0.0072225778265859,
+        "der_mrq": 0.0422901540524709,
+        "roa_ttm": 0.03489200187709803,
+        "roe_ttm": 0.204302143917373,
+        "market_cap": 1195767482023936,
+        "company_name": "PT Bank Central Asia Tbk.",
+        "total_assets": 1381449427000000,
+        "total_equity": 235932600000000,
+        "total_revenue": 98474833000000,
+        "profit_and_loss": 48201536000000,
+        "yearly_mcap_chg": 0.119768775247864,
+        "total_liabilities": 1145516827000000,
+        "financials_latest_date": "2023-09-30"
+    },
+    "historical_dividends": [
+        {
+            "year": 2019,
+            "breakdown": [
+                {
+                    "date": "2019-12-06",
+                    "total": 20,
+                    "yield": 0.003409304888919
+                },
+                {
+                    "date": "2019-04-24",
+                    "total": 51,
+                    "yield": 0.00869372766464949
+                }
+            ],
+            "total_yield": 0.0121030325535685,
+            "total_dividend": 71
+        },
+        {
+            "year": 2020,
+            "breakdown": [
+                {
+                    "date": "2020-12-08",
+                    "total": 19.6,
+                    "yield": 0.00325658521614969
+                },
+                {
+                    "date": "2020-04-21",
+                    "total": 91,
+                    "yield": 0.0151198599487543
+                }
+            ],
+            "total_yield": 0.018376445164904,
+            "total_dividend": 110.6
+        },
+        {
+            "year": 2021,
+            "breakdown": [
+                {
+                    "date": "2021-11-17",
+                    "total": 25,
+                    "yield": 0.00371545902453363
+                },
+                {
+                    "date": "2021-04-08",
+                    "total": 86.4,
+                    "yield": 0.0128406267613173
+                }
+            ],
+            "total_yield": 0.0165560857858509,
+            "total_dividend": 111.4
+        },
+        {
+            "year": 2022,
+            "breakdown": [
+                {
+                    "date": "2022-12-02",
+                    "total": 35,
+                    "yield": 0.00437327800318599
+                },
+                {
+                    "date": "2022-03-28",
+                    "total": 120,
+                    "yield": 0.0149940950796008
+                }
+            ],
+            "total_yield": 0.0193673730827868,
+            "total_dividend": 155
+        },
+        {
+            "year": 2023,
+            "breakdown": [
+                {
+                    "date": "2023-12-04",
+                    "total": 42.5,
+                    "yield": 0.00476726843044162
+                },
+                {
+                    "date": "2023-03-29",
+                    "total": 170,
+                    "yield": 0.0190690737217665
+                }
+            ],
+            "total_yield": 0.0238363421522081,
+            "total_dividend": 212.5
+        }
+    ],
+    "annual_yield": [
+        {
+            "year": 2023,
+            "total": 212.5,
+            "yield": 0.0238363421522081
+        },
+        {
+            "year": 2022,
+            "total": 155,
+            "yield": 0.0193673730827868
+        },
+        {
+            "year": 2021,
+            "total": 111.4,
+            "yield": 0.0165560857858509
+        },
+        {
+            "year": 2020,
+            "total": 110.6,
+            "yield": 0.018376445164904
+        },
+        {
+            "year": 2019,
+            "total": 71,
+            "yield": 0.0121030325535685
+        }
+    ],
+    "yield_ttm": 0.0219072164948454,
+    "dividend_yield_avg": {
+        "period": 5,
+        "avg_yield": 0.0180478557478637
+    },
+    "payout_ratio": 0.543466861719925,
+    "cash_payout_ratio": 0.518153771142271,
+    "last_ex_dividend_date": "2023-12-04",
+    "point_summaries": [
+        {
+            "name": "value",
+            "point": 0,
+            "maxpoint": 17
+        },
+        {
+            "name": "competitive",
+            "point": 12,
+            "maxpoint": 17
+        },
+        {
+            "name": "future",
+            "point": 15,
+            "maxpoint": 15
+        },
+        {
+            "name": "financials",
+            "point": 18,
+            "maxpoint": 21
+        },
+        {
+            "name": "dividend",
+            "point": 6,
+            "maxpoint": 19
+        },
+        {
+            "updatedAt": "2024-02-09T11:18:54.782Z"
+        }
+    ],
+    "company_growth_forecasts": [
+        {
+            "base_year": 2022,
+            "eps_growth": 0.307324318444632,
+            "estimate_year": 2024,
+            "revenue_growth": 0.233296524740317
+        },
+        {
+            "base_year": 2022,
+            "eps_growth": 0.204977748942487,
+            "estimate_year": 2023,
+            "revenue_growth": 0.127993185604024
+        }
+    ],
+    "company_value_forecasts": [
+        {
+            "eps_estimate": 432,
+            "estimate_year": 2024,
+            "revenue_estimate": 109740000000000
+        },
+        {
+            "eps_estimate": 398.18,
+            "estimate_year": 2023,
+            "revenue_estimate": 100370000000000
+        },
+        {
+            "eps_estimate": 330.445929831677,
+            "estimate_year": null,
+            "revenue_estimate": 88981034000000
+        }
+    ],
+    "wsj_format": 4
+}

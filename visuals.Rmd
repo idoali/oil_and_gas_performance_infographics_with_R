@@ -1,0 +1,255 @@
+---
+title: "Visuals"
+author: "Ido Ali"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Importing All Data
+
+Before we built the infographics, of course you need to prepare the data. We got the data from Sectors App API. 
+
+The data is about Oil & Gas companies that registered at IDX (Indonesian Stock Exchange) performance comparisons. There are 5 companies that are listed:
+1. **Adaro Energy Indonesia** 
+2. **Bayan Resources**
+3. **Dian Swastatika Sentosa**
+4. **Golden Energy Mines**
+5. **Indo Tambangraya Megah**
+
+All the data have been downloaded and stored in a JSON file. Let's upload them one by one. 
+
+```{r}
+library(jsonlite)
+library(ggplot2)
+library(ggtext)
+library(patchwork)
+library(scales)
+
+stock_symbols <- c("ADRO.JK", "BYAN.JK", "DSSA.JK", "GEMS.JK", "ITMG.JK")
+
+load_json_data <- function(symbol) {
+  file_path <- paste0("data_input/", symbol, ".json")
+  json_data <- fromJSON(file_path)
+  return(json_data)
+}
+
+stock_data <- lapply(stock_symbols, load_json_data)
+```
+
+We save all of our data inside `stock_data`. 
+
+Next, we need to find what are the plots we will show in our infographics. There are 3 plots:
+1. Barplot of revenue growth of all companies in 2022
+2. Line plot of P/E (Price to Earning) over the years
+2. Line plot of P/B (Price to Booking) over the years
+
+Let's make them one by one. 
+
+# Building Plots
+
+## Revenue Growth Plot
+
+Before we make the plot, we need to collect all the data first. We don't need all the data. We only need data that is related to the companies revenues. 
+
+Let's start collecting them. 
+
+```{r}
+library(tidyr)
+library(dplyr)
+
+company <- c("Adaro Energy Indonesia", 
+             "Bayan Resources", 
+             "Dian Swastatika Sentosa",
+             "Golden Energy Mines",
+             "Indo Tambangraya Megah")
+
+growth_df <- data.frame()
+
+for (i in seq(1, length(company))) {
+  filtered_data <- stock_data[[i]][["historical_financials"]] %>% 
+    filter(year %in% c(2021, 2022)) %>% 
+    select(year, revenue) %>%
+    pivot_wider(names_from = year, values_from = revenue) %>% 
+    mutate(company = company[i])
+  growth_df <- rbind(growth_df, filtered_data)
+}
+```
+We collect all the information about revenue in a data frame named `growth_df`. Let's clean `growth_df` a little bit more. 
+
+```{r}
+colnames(growth_df) <- c("year.2021", "year.2022", "company")
+
+growth_df <- growth_df %>% 
+  mutate(ratio = round((year.2022 - year.2021) * 100 / year.2021, 2))
+
+growth_df
+```
+
+What we also need to prepare is the font. Not all fonts are equal. Some are cooler than the others. So let's set our font to a cool one. In order to do this, we will use all the functions inside `showtext` library.  
+
+```{r}
+library(showtext)
+
+font <- "Gudea"
+font_add_google(family=font, font, db_cache = TRUE)
+fa_path <- systemfonts::font_info(family = "Font Awesome 6 Brands")[["path"]]
+font_add(family = "fa-brands", regular = fa_path)
+
+showtext_auto(enable = TRUE)
+```
+
+Now let's build the plot. We'll call this plot as `growth_plot`. For all the settings inside of this plot, we will have a theme function named `theme_growth`. 
+
+For all the plots we will make, we'll use a fixed set of colors. Here's a list of colors we will use:
+1. _White - #f2f2f2_
+2. _Green - #62bb9f_
+3. _Purple - #574086_
+4. _Blue - #366e9c_
+5. _Chocolate - #d68b53_
+6. _Cream - #d68b53_
+7. _Red - #e11d48_
+8. _Black - #0c0a09_
+
+You can also save the plot as `.png` file using `ggsave()` function. 
+
+```{r}
+txt_col <- "#f2f2f2"
+bg <- "#0c0a09"
+colors <- c("#e11d48", "#62bb9f", "#574086", "#366e9c", "#d68b53")
+
+theme_growth <- theme(axis.title = element_blank(),
+                   panel.grid = element_blank(),
+                   panel.grid.major.x = element_line(color = txt_col),
+                   axis.text = element_text(color=txt_col, size = 30),
+                   axis.line = element_blank(),
+                   strip.text.x = element_text(face="bold"),
+                   plot.title = element_text(hjust=.5,size=60,
+                                                 color=txt_col,lineheight=.8, 
+                                                 margin=margin(20,0,30,0)),
+                   plot.subtitle = element_text(hjust=.5,size=18,
+                                                    color=txt_col,lineheight = 1,
+                                                    margin=margin(10,0,30,0)),
+                   axis.text.y = element_blank(),
+                   plot.caption = element_text(hjust=.5, margin=margin(60,0,0,0),
+                                                   size=8, color=txt_col, lineheight = 1.2),
+                   plot.caption.position = "plot",
+                   plot.background = element_rect(color=bg, fill=bg),
+                   plot.margin = margin(10,100,10,10),
+                   legend.position = "top",
+                   legend.text = element_text(size = 20, color = txt_col),
+                   legend.background = element_rect(fill= bg),
+                   panel.background = element_rect(color=bg, fill=bg),
+                   text = element_text(family = "Gudea"),
+                   aspect.ratio = 0.3)
+
+growth_plot <- growth_df %>% 
+  mutate(ratio_text = paste(ratio, "%", sep = "")) %>% 
+  ggplot() +
+  geom_col(aes(y = reorder(company, ratio), x = ratio, fill = company)) +
+  geom_text(aes(y = reorder(company, ratio), x = ratio + 15, label = ratio_text), size = 2) +
+  labs(title = "2022 Revenue Growth", x = "Ratio (%)", y = "") +
+  scale_x_continuous(breaks = seq(50, 250, 50), limits = c(0, 250)) +
+  scale_fill_discrete(colors) +
+  theme_growth
+
+ggsave("imgs/growth_plot.png", growth_plot, width = 10, height = 10)
+```
+
+## P/E Plot
+
+For P/E plot, let's prepare the data first. 
+
+```{r}
+company <- c("Adaro Energy Indonesia", 
+             "Bayan Resources", 
+             "Dian Swastatika Sentosa",
+             "Golden Energy Mines",
+             "Indo Tambangraya Megah")
+
+pepb_df <- data.frame()
+
+for (i in seq(1, length(company))) {
+  filtered_data <- stock_data[[i]][["historical_valuation"]] %>% 
+    select(year, pe, pb) %>% 
+    mutate(company = company[i])
+  pepb_df <- rbind(pepb_df, filtered_data)
+}
+```
+
+Now let's build the plot. For this plot, we will use theme function `theme_pepb` and save it as `pe_plot`. 
+
+```{r}
+theme_pepb <- theme(axis.title = element_blank(),
+                   panel.grid = element_blank(),
+                   panel.grid.major.y = element_line(color = txt_col),
+                   axis.text = element_text(color=txt_col, size=30),
+                   axis.line = element_blank(),
+                   strip.text.x = element_text(face="bold"),
+                   plot.title = element_text(hjust=.5,size=60,
+                                                 color=txt_col,lineheight=.8, 
+                                                 margin=margin(20,0,30,0)),
+                   plot.subtitle = element_text(hjust=.5,size=18,
+                                                    color=txt_col,lineheight = 1,
+                                                    margin=margin(10,0,30,0)),
+                   plot.caption = element_text(hjust=.5, margin=margin(60,0,0,0),
+                                                   size=8, color=txt_col, lineheight = 1.2),
+                   plot.caption.position = "plot",
+                   plot.background = element_rect(color=bg, fill=bg),
+                   plot.margin = margin(10,10,10,10),
+                   legend.position = "none",
+                   legend.title = element_text(face="bold"),
+                   panel.background = element_rect(color=bg, fill=bg),
+                   text = element_text(family = "Gudea"),
+                   aspect.ratio = 0.3)
+
+pe_plot <- pepb_df %>% 
+  ggplot(aes(x = year, y = pe)) +
+  # geom_smooth(aes(color = company), size = 1) +
+  geom_point(aes(color = company), size = 3) +
+  geom_smooth(aes(color = company), size = 1) +
+  scale_fill_discrete(colors) +
+  scale_y_continuous(labels = function(x) paste(x, "%", sep = "")) +
+  labs(title = "Price to Earnings") +
+  theme_pepb
+
+ggsave("imgs/pe_plot.png", pe_plot, width = 10, height = 10)
+```
+
+## P/B Plot
+
+Building P/B Plot is similar to building P/E Plot. The only difference it has is on its data. 
+
+```{r}
+pb_plot <- pepb_df %>% 
+  ggplot(aes(x = year, y = pb)) +
+  # geom_smooth(aes(color = company), size = 1) +
+  geom_point(aes(color = company), size = 3) +
+  geom_smooth(aes(color = company), size = 1) +
+  scale_fill_discrete(colors) +
+  scale_y_continuous(labels = function(x) paste(x, "%", sep = "")) +
+  labs(title = "Price to Bookings") +
+  theme_pepb
+
+ggsave("imgs/pb_plot.png", pb_plot, width = 10, height = 10)
+```
+
+# Combining All Plots
+
+After you built all the plots, now you can combine them all together. We will combine it and save it as `plot_compined`. In order to combine all these plots, we need the functions from `patchwork` library. 
+
+```{r}
+plot_combined <- growth_plot + pe_plot + pb_plot +
+  plot_layout(ncol = 1, nrow = 3, heights = c(1, 1, 1), widths = c(1, 1, 1))
+
+ggsave("imgs/combined_plot.png", plot_combined, width = 10, height = 10)
+```
+
+
+Inspiration: 
+- https://r-graph-gallery.com/web-line-chart-small-multiple-all-group-greyed-out.html
+- https://isabella-b.com/blog/juneteenth-2020/
+
