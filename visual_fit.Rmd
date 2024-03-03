@@ -166,7 +166,7 @@ pe_vis <- valuation %>%
   geom_text(aes(x = pe + 1, y = reorder(company, pe), label = paste0(round(pe, 1), "%")),
             color = txt_col, size = 15) +
   scale_fill_manual(values = colors) +
-  labs(title = "<b>P/B Ratio</b> Comparison",
+  labs(title = "<b>P/E Ratio</b> Comparison",
        subtitle = "Same as P/B ratio, P/E ratio in 2023 also shows that<br><b>Bayan Resources Tbk is overvalued</b>") +
   theme_void() +
   theme(legend.position = "bottom",
