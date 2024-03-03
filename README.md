@@ -117,7 +117,7 @@ all_earnings %>%
   
 ```
 
-!(Earnings)[visuals/earnings.png]
+![Earnings](visuals/earnings.png)
 
 Bayan and Adaro appear to be the most attractive investment options based on their consistently high earnings compared to the other companies in the oil & gas sector in Indonesia. 
 
@@ -178,7 +178,7 @@ valuation %>%
   
 ```
 
-!(Earnings)[visuals/pb.png]
+![P/B Ratio](visuals/pb.png)
 
 As you can see above, Bayan Resources Tbk has P/B ratio higher than all other companies combined. 
 
@@ -218,7 +218,7 @@ valuation %>%
   guides(fill = guide_legend(nrow = 2))
 ```
 
-!(Earnings)[visuals/pe.png]
+![P/E Ratio](visuals/pe.png)
 
 Just like what we observed in P/B ratio, P/E ratio also shows that Bayan Resources Tbk is overvalued. 
 
@@ -256,7 +256,7 @@ valuation %>%
   guides(fill = guide_legend(nrow = 2))
 ```
 
-!(Earnings)[visuals/ps.png]
+![P/S Ratio](visuals/ps.png)
 
 P/S ratio also shows the same thing as P/B ratio and P/E ratio. P/S ratio of Bayan Resources Tbk is still higher than all other companies P/S ratio combined times two. 
 
