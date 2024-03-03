@@ -1,6 +1,63 @@
-# Oil & Gas Companies Performance In Indonesia Infographic
+---
+title: "New Markdown"
+author: "Ido Ali"
+date: "`r Sys.Date()`"
+output: html_document
+---
 
-# Introduction
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# To Do 
+
+[ ] See all data
+[ ] Ask ChatGPT to gain insights
+
+# Tasks
+
+Breaking down this:
+- Financial Strengths:
+  + Very low valuation metrics compared to peers.
+  + Positive net earnings and increasing revenue.
+- Financial Weaknesses:
+  + Market capitalization has decreased.
+- Analysis: 
+ADRO exhibits strong financial performance with very low valuation metrics, making it an attractive option for long-term investment despite the recent decrease in market capitalization.
+
+## Earnings Comparison (line plot)
+[x] Explain what earning is
+[x] Make Visualization comparing all earnings
+[x] Conclusion
+[x] Export image and fit them
+
+## P/E Comparison (bar plot)
+[x] Explain what P/E is
+[x] Make Visualization comparing all P/Es
+[x] Conclusion
+[x] Export image and fit them
+
+## P/B Comparison (bar plot)
+[x] Explain what P/B is
+[x] Make Visualization comparing all P/Bs
+[x] Conclusion
+[x] Export image and fit them
+
+## P/S Comparison
+[x] Explain what P/S is
+[x] Make Visualization comparing all P/Ss
+[x] Conclusion
+[x] Export image and fit them
+
+Others
+[ ] Write background
+[ ] Write comments to all code
+[ ] Mention Sectors App as the data source
+
+Conclusion
+`BYAN.JK` is overvalued. 
+
+# Background
 
 Investing in Indonesia's energy sector is really important because since it helps the country grow economically, creates jobs, and powers up industries. But Indonesia has some challenges in keeping up with its energy needs, so investing locally is key to making sure Indonesia have enough energy and don't rely too much on imports.
 
@@ -55,6 +112,7 @@ font_add(family = "fa-brands", regular = fa_path)
 
 showtext_auto(enable = TRUE)
 ```
+
 
 ## Earnings
 
@@ -117,8 +175,6 @@ all_earnings %>%
   
 ```
 
-!(Earnings)[visuals/earnings.png]
-
 Bayan and Adaro appear to be the most attractive investment options based on their consistently high earnings compared to the other companies in the oil & gas sector in Indonesia. 
 
 Consistent and high earnings suggest that these companies have strong operational performance and potentially better prospects for future growth, making them more appealing to investors seeking stable returns.
@@ -178,8 +234,6 @@ valuation %>%
   
 ```
 
-!(Earnings)[visuals/pb.png]
-
 As you can see above, Bayan Resources Tbk has P/B ratio higher than all other companies combined. 
 
 ## P/E
@@ -218,8 +272,6 @@ valuation %>%
   guides(fill = guide_legend(nrow = 2))
 ```
 
-!(Earnings)[visuals/pe.png]
-
 Just like what we observed in P/B ratio, P/E ratio also shows that Bayan Resources Tbk is overvalued. 
 
 ## P/S Ratio
@@ -256,8 +308,6 @@ valuation %>%
   guides(fill = guide_legend(nrow = 2))
 ```
 
-!(Earnings)[visuals/ps.png]
-
 P/S ratio also shows the same thing as P/B ratio and P/E ratio. P/S ratio of Bayan Resources Tbk is still higher than all other companies P/S ratio combined times two. 
 
 # Conclusion
@@ -274,3 +324,9 @@ Therefore, if considering an investment among these five companies:
 This report recommends investing in Adaro Energy Indonesia.
 
 However, it's important to note that besides earnings and the aforementioned ratios, there are other critical factors to consider. Factors such as company culture, market trends, public policy, and others should also be taken into account when making investment decisions. 
+
+
+
+
+
+

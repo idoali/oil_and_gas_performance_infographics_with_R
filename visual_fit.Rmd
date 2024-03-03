@@ -1,0 +1,222 @@
+---
+title: "visual_fit"
+author: "Ido Ali"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Import Data
+
+
+```{r}
+library(jsonlite)
+library(dplyr)
+
+stock_symbols <- c("ADRO.JK", "BYAN.JK", "DSSA.JK", "GEMS.JK", "ITMG.JK")
+stock_names <- c("adaro", "bayan", "dian", "golden", "indo")
+stock_fullnames <- c("Adaro Energy Indonesia Tbk",
+                     "Bayan Resources Tbk",
+                     "Dian Swastatika Sentosa Tbk",
+                     "Golden Energy Mines Tbk",
+                     "Indo Tambangraya Megah Tbk")
+
+load_json_data <- function(symbol) {
+  file_path <- paste0("data_input/", symbol, ".json")
+  json_data <- fromJSON(file_path)
+  return(json_data)
+}
+
+stock_data <- lapply(stock_symbols, load_json_data)
+```
+
+# Exploration
+
+```{r}
+library(showtext)
+
+font <- "Gudea"
+font_add_google(family=font, font, db_cache = TRUE)
+fa_path <- systemfonts::font_info(family = "Font Awesome 6 Brands")[["path"]]
+font_add(family = "fa-brands", regular = fa_path)
+
+showtext_auto(enable = TRUE)
+```
+
+```{r}
+library(tidyr)
+
+all_earnings <- data.frame(year = seq(2019, 2022))
+
+for (i in seq(1, length(stock_symbols))){
+  new <- stock_data[[i]]$historical_financials[, c("year", "earnings")] %>%
+    mutate(!!stock_names[i] := earnings) %>% 
+    select(year, stock_names[i])
+  
+  all_earnings <- all_earnings %>% 
+    left_join(new, by = "year")
+}
+
+```
+
+```{r}
+library(ggplot2)
+library(scales)
+library(ggtext)
+
+company_switch <- function(x){
+  index <- match(x, stock_names)
+  y <- stock_fullnames[index]
+  return(y)
+}
+
+earning_vis <- all_earnings %>% 
+  pivot_longer(cols = stock_names, names_to = "company") %>% 
+  mutate(company = company_switch(company)) %>% 
+  ggplot(aes(x = year, y = value)) +
+  geom_smooth(aes(color = company), size = 2) +
+  geom_point(aes(color = company), size = 4) +
+  scale_y_continuous(labels = label_number(suffix = " T", scale = 1e-12)) +
+  scale_color_manual(values = colors) +
+  labs(title = "<b>Earning Comparisons</b>",
+       subtitle = "<b>Adaro</b> and <b>Bayan</b> have<br>the highest earnings out of all<br><i>(All earnings are in Rupiahs)</i>") +
+  # theme_void() +
+  theme(legend.position = "bottom",
+        panel.grid = element_blank(),
+        panel.grid.major.y = element_line(size = 1, color = txt_col),
+        plot.background = element_rect(fill = bg_col),
+        panel.background = element_rect(fill = bg_col),
+        legend.title = element_blank(),
+        legend.background =  element_blank(),
+        legend.key = element_rect(fill = bg_col),
+        text = element_text(color = txt_col, family = "Gudea", size = 40),
+        axis.text = element_text(color = txt_col, size = 40),
+        axis.title = element_blank(),
+        plot.title = element_markdown(size = 120, family = "Gudea", hjust = 0.5,
+                                      margin = margin(0, 0, 10, 0)),
+        plot.subtitle = element_markdown(size = 45, family = "Gudea",
+                                         hjust = 0.5, margin = margin(0, 0, 20, 0),
+                                         lineheight = 0.2)) +
+  guides(color = guide_legend(nrow = 2))
+  
+ggsave("visuals/earnings.png", earning_vis, width = 9, height = 5)
+```
+
+```{r}
+valuation <- data.frame()
+
+for (i in seq(1, length(stock_names))){
+  new_valuation <- stock_data[[i]]$historical_valuation %>% 
+    filter(year == 2023) %>% 
+    select(pb, pe, ps) %>% 
+    mutate(company = stock_fullnames[i])
+  
+  valuation <- rbind(valuation, new_valuation)
+}
+```
+
+
+```{r}
+txt_col <- "#f2f2f2"
+bg_col <- "#0c0a09"
+colors <- c("#e11d48", "#62bb9f", "#574086", "#366e9c", "#d68b53")
+
+pb_vis <- valuation %>% 
+  ggplot(aes(x = pb, y = reorder(company, pb))) +
+  geom_col(aes(fill = company)) +
+  scale_x_continuous(limits = c(0, 22)) +
+  geom_textbox(x = 15, y = stock_fullnames[4],
+            label = "<b>Bayan</b> is 4 times bigger\nthan <b>Dian</b>",
+            fill = txt_col, color = bg_col, size = 15, lineheight = 0.3, hjust = 0.5) +
+  geom_text(aes(x = pb + 1, y = reorder(company, pb), label = paste0(round(pb, 1), "%")),
+            color = txt_col, size = 15) +
+  scale_fill_manual(values = colors) +
+  labs(title = "<b>Bayan</b> Is Overvalued",
+       subtitle = "From P/B ratio in 2023, We can See that Bayan has<br>P/B value bigger than <b>other 4 companies combined</b>") +
+  theme_void() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.box.background = element_rect(fill = bg_col),
+        panel.background = element_rect(fill = bg_col),
+        plot.background = element_rect(fill = bg_col),
+        text = element_text(color = txt_col, family = "Gudea", size = 40),
+        plot.title = element_markdown(hjust = 0.5, size = 120),
+        plot.subtitle = element_markdown(hjust = 0.5, size = 45,
+                                         margin = margin(10, 0, 10, 0),
+                                         lineheight = 0.2),
+        aspect.ratio = 0.3
+        ) +
+  guides(fill = guide_legend(nrow = 2))
+
+ggsave("visuals/pb.png", pb_vis, width = 9, height = 5)
+```
+
+```{r}
+pe_vis <- valuation %>% 
+  ggplot(aes(x = pe, y = reorder(company, pe))) +
+  geom_col(aes(fill = company)) +
+  scale_x_continuous(limits = c(0, 32)) +
+  geom_textbox(x = 20, y = stock_fullnames[4],
+            label = "<b>Bayan Resources Tbk</b> P/B ratio is far bigger than others",
+            fill = txt_col, text.colour = bg_col, halign = 0.5, size = 15,
+            lineheight = 0.3) +
+  geom_text(aes(x = pe + 1, y = reorder(company, pe), label = paste0(round(pe, 1), "%")),
+            color = txt_col, size = 15) +
+  scale_fill_manual(values = colors) +
+  labs(title = "<b>P/B Ratio</b> Comparison",
+       subtitle = "Same as P/B ratio, P/E ratio in 2023 also shows that<br><b>Bayan Resources Tbk is overvalued</b>") +
+  theme_void() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.box.background = element_rect(fill = bg_col),
+        panel.background = element_rect(fill = bg_col),
+        plot.background = element_rect(fill = bg_col),
+        text = element_text(color = txt_col, family = "Gudea", size = 40),
+        plot.title = element_markdown(hjust = 0.5, size = 120),
+        plot.subtitle = element_markdown(hjust = 0.5, size = 45,
+                                         margin = margin(10, 0, 10, 0),
+                                         lineheight = 0.2),
+        aspect.ratio = 0.3
+        ) +
+  guides(fill = guide_legend(nrow = 2))
+
+ggsave("visuals/pe.png", pe_vis, width = 9, height = 5)
+```
+
+## P/S Ratio
+
+```{r}
+ps_vis <- valuation %>% 
+  ggplot() +
+  geom_col(aes(x = ps, y = reorder(company, ps), fill = company)) +
+  scale_x_continuous(limits = c(0, 12)) +
+  geom_textbox(x = 6, y = stock_fullnames[4],
+            label = "<b>Bayan Resources Tbk</b> P/S ratio is far bigger than others",
+            fill = txt_col, color = bg_col, halign = 0.5, size = 15,
+            lineheight = 0.3) +
+  geom_text(aes(x = ps + 0.5, y = reorder(company, ps), label = paste0(round(ps, 1), "%")),
+            color = txt_col, size = 15) +
+  scale_fill_manual(values = colors) +
+  labs(title = "<b>P/S Ratio</b> Comparison",
+       subtitle = "Same as P/B ratio and P/E ratio<br>P/S ratio also shows that<br><b>Bayan Resources Tbk is overvalued</b>") +
+  theme_void() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.box.background = element_rect(fill = bg_col),
+        panel.background = element_rect(fill = bg_col),
+        plot.background = element_rect(fill = bg_col),
+        text = element_text(color = txt_col, family = "Gudea", size = 40),
+        plot.title = element_markdown(hjust = 0.5, size = 120),
+        plot.subtitle = element_markdown(hjust = 0.5, size = 45,
+                                         margin = margin(10, 0, 10, 0),
+                                         lineheight = 0.2),
+        aspect.ratio = 0.3
+        ) +
+  guides(fill = guide_legend(nrow = 2))
+
+ggsave("visuals/ps.png", ps_vis, width = 9, height = 5)
+```
+

@@ -1,1 +1,480 @@
-{"symbol": "BYAN.JK", "nologo": false, "company_name": "Bayan Resources Tbk", "listing_board": "Main", "industry": "Coal", "sub_industry": "Coal Production", "sector": "Energy", "sub_sector": "Oil, Gas & Coal", "market_cap": 655832647729152, "market_cap_rank": 4, "address": "Gedung Office 8, Lantai 37 Unit A-H Jl. Senopati No. 8B, Senayan, Kebayoran Baru, Jakarta Selatan 12950 - Indonesia", "employee_num": 3441, "listing_date": "2008-08-12", "website": "www.bayan.com.sg", "phone": "021-2935 6888", "email": "corporate.secretary@bayan.com.sg", "last_close_price": 19675, "latest_close_date": "2024-02-07", "daily_close_change": 0.0, "forward_pe": null, "enterprise_to_revenue": 10.371730850649355, "enterprise_to_ebitda": 21.61163053604082, "peg_ratio": -0.413463485302521, "analyst_rating": null, "price_cash_flow": 35.44441068629835, "interest_coverage_ratio": 871.7880060516675, "der_mrq": 0.0, "cash_flow_debt_ratio": null, "employee_num_rank": 119, "key_executives": [{"name": "Dato' Dr. Low Tuck Kwong", "position": "President Director"}, {"name": "Jenny Quantero", "position": "Director"}, {"name": "Lim Chai Hock", "position": "Director"}, {"name": "Low Yi Ngo", "position": "Director"}, {"name": "Russell John Neil", "position": "Director"}, {"name": "Alastair Gordon Christopher Mcleod", "position": "Director"}, {"name": "Kim, Sung Kook", "position": "Director"}, {"name": "Alexander Ery Wibowo", "position": "Director"}, {"name": "Oliver Khaw Kar Heng", "position": "Director"}, {"name": "Lee Minhyung", "position": "Director"}, {"name": "Merlin", "position": "Director"}, {"name": "Ulina Fitriani", "position": "Director"}], "executives_shareholdings": [{"name": "Alastair G.C. Mcleod", "position": "Director", "share_amount": 5000000, "share_percentage": 0.0001}, {"name": "Alexander Ery Wibowo Sh, Llm", "position": "Director", "share_amount": 1000000, "share_percentage": 0}, {"name": "Dato'            Dr Low Tuck Kwong", "position": "Director", "share_amount": 20352515570, "share_percentage": 0.6106}, {"name": "Jenny Quantero", "position": "Director", "share_amount": 994975000, "share_percentage": 0.0298}, {"name": "Lim Chai Hock", "position": "Director", "share_amount": 1086940000, "share_percentage": 0.0326}, {"name": "Low Yi Ngo", "position": "Director", "share_amount": 61599800, "share_percentage": 0.0019}, {"name": "Merlin", "position": "Director", "share_amount": 2002000, "share_percentage": 0.0001}, {"name": "Oliver Khaw Kar Heng", "position": "Director", "share_amount": 617600, "share_percentage": 0}, {"name": "Russell Neil", "position": "Director", "share_amount": 5000000, "share_percentage": 0.0001}, {"name": "Ulina Fitriani", "position": "Director", "share_amount": 10000000, "share_percentage": 0.0003}], "major_shareholders": [{"name": "Dato'            Dr Low Tuck Kwong", "share_value": 400435743839750, "share_amount": 20352515570, "share_percentage": "0.6106"}, {"name": "Public (Scripless)", "share_value": 147175001465250, "share_amount": 7480305030, "share_percentage": "0.2244"}, {"name": "Pt Sumber Suryadana Prima", "share_value": 65584251500000, "share_amount": 3333380000, "share_percentage": "0.1"}, {"name": "Lim Chai Hock", "share_value": 21385544500000, "share_amount": 1086940000, "share_percentage": "0.0326"}, {"name": "Jenny Quantero", "share_value": 19576133125000, "share_amount": 994975000, "share_percentage": "0.0298"}, {"name": "Low Yi Ngo", "share_value": 1211976065000, "share_amount": 61599800, "share_percentage": "0.0019"}, {"name": "Ulina Fitriani", "share_value": 196750000000, "share_amount": 10000000, "share_percentage": "0.0003"}, {"name": "Merlin", "share_value": 39389350000, "share_amount": 2002000, "share_percentage": "0.0001"}, {"name": "Alastair G.C. Mcleod", "share_value": 98375000000, "share_amount": 5000000, "share_percentage": "0.0001"}, {"name": "Russell Neil", "share_value": 98375000000, "share_amount": 5000000, "share_percentage": "0.0001"}], "ownership_percentage": {"Others": 0.2244, "Insiders": 0.7755, "Institutions": 0.0001}, "historical_valuation": [{"pb": 4.41568779106221, "pe": 11.168094813733, "ps": 2.6316048451595, "year": 2020, "pb_peer_avg": 0.986014572029268, "pe_peer_avg": 4.57987497294454, "ps_peer_avg": 1.26934002964985}, {"pb": 3.51694996388098, "pe": 5.22042226681735, "ps": 2.2197233549633, "year": 2021, "pb_peer_avg": 1.21795893899591, "pe_peer_avg": 4.99837111638049, "ps_peer_avg": 1.34063593211736}, {"pb": 23.8555227743746, "pe": 20.7463549322419, "ps": 9.60863932795161, "year": 2022, "pb_peer_avg": 1.31973994157193, "pe_peer_avg": 4.93068187642478, "ps_peer_avg": 1.25639596737423}, {"pb": 20.5194921644481, "pe": 29.4055071010166, "ps": 10.4481127094745, "year": 2023, "pb_peer_avg": 1.0385676793148, "pe_peer_avg": 6.20773358519047, "ps_peer_avg": 1.02938294114764}], "historical_financials": [{"tax": 1074701111617, "year": 2019, "revenue": 19318745251140, "earnings": 3101272436452, "cash_only": null, "total_debt": 5047837514220, "fixed_assets": 10529388733852, "gross_profit": 6793561347364, "total_assets": 17742391438721, "total_equity": 8594380087309, "operating_pnl": 4394393355047, "total_liabilities": 9148011351412, "current_liabilities": 8064858796186, "earnings_before_tax": 4326139060328, "cash_and_equivalents": 2422350989154, "total_cash_and_due_from_banks": null}, {"tax": 1154570001687, "year": 2020, "revenue": 19601347099995, "earnings": 4618782420845, "cash_only": null, "total_debt": 5641829463289, "fixed_assets": 11948826218184, "gross_profit": 6503266010715, "total_assets": 22757143158909, "total_equity": 12104834035228, "operating_pnl": 4005289554926, "total_liabilities": 10652309123681, "current_liabilities": 3325572177451, "earnings_before_tax": 5994232578740, "cash_and_equivalents": 5392532063890, "total_cash_and_due_from_banks": null}, {"tax": 5140540263807, "year": 2021, "revenue": 40545593124819, "earnings": 17239984698569, "cash_only": null, "total_debt": 0, "fixed_assets": 14432654767393, "gross_profit": 27024735250352, "total_assets": 34596316823433, "total_equity": 26482054601869, "operating_pnl": 23857448402664, "total_liabilities": 8114262221564, "current_liabilities": 6439340660742, "earnings_before_tax": 23136695047741, "cash_and_equivalents": 13938354445249, "total_cash_and_due_from_banks": null}, {"tax": 9969888153448, "year": 2022, "revenue": 72851105771417, "earnings": 33740866879325, "cash_only": null, "total_debt": 0, "fixed_assets": 23929974187274, "gross_profit": 48944092569624, "total_assets": 61108447653482, "total_equity": 30903657119953, "operating_pnl": 45568995504038, "total_liabilities": 30204790533530, "current_liabilities": 28367139556804, "earnings_before_tax": 45617843663894, "cash_and_equivalents": 28295214295687, "total_cash_and_due_from_banks": null}], "self_financial_info": {"pb_mrq": 20.5194921644481, "pe_ttm": 29.4055071010166, "symbol": "BYAN.JK", "dar_mrq": 0, "der_mrq": 0, "roa_ttm": 0.5084245984583284, "roe_ttm": 0.6643742204175902, "market_cap": 655832647729152, "company_name": "Bayan Resources Tbk", "total_assets": 43866986877595, "total_equity": 33570018979363, "total_revenue": 62770441510880, "profit_and_loss": 22303055188818, "yearly_mcap_chg": 0.0247385120768, "total_liabilities": 10296967898233, "financials_latest_date": "2023-09-30"}, "historical_dividends": [{"year": 2019, "breakdown": [{"date": "2019-06-28", "total": 127.053, "yield": 0.0732543542981148}], "total_yield": 0.0732543542981148, "total_dividend": 127.053}, {"year": 2020, "breakdown": [{"date": "2020-09-04", "total": 29.508, "yield": 0.0210032165050507}], "total_yield": 0.0210032165050507, "total_dividend": 29.508}, {"year": 2021, "breakdown": [{"date": "2021-05-31", "total": 128.628, "yield": 0.0733693167567253}], "total_yield": 0.0733693167567253, "total_dividend": 128.628}, {"year": 2022, "breakdown": [{"date": "2022-12-20", "total": 468.24, "yield": 0.0707644671201706}, {"date": "2022-05-30", "total": 436.32, "yield": 0.0659404397010803}], "total_yield": 0.136704906821251, "total_dividend": 904.56}, {"year": 2023, "breakdown": [{"date": "2023-12-18", "total": 232.74, "yield": 0.0123288882896304}, {"date": "2023-05-09", "total": 354.168, "yield": 0.0187612678855658}], "total_yield": 0.0310901561751962, "total_dividend": 586.908}], "annual_yield": [{"year": 2023, "total": 586.908, "yield": 0.0310901561751962}, {"year": 2022, "total": 904.56, "yield": 0.136704906821251}, {"year": 2021, "total": 128.628, "yield": 0.0733693167567253}, {"year": 2020, "total": 29.508, "yield": 0.0210032165050507}, {"year": 2019, "total": 127.053, "yield": 0.0732543542981148}], "yield_ttm": 0.0298301407887945, "dividend_yield_avg": {"period": 5, "avg_yield": 0.0670843901112676}, "payout_ratio": 0.877171353268749, "cash_payout_ratio": 1.26352006263435, "last_ex_dividend_date": "2023-12-18", "point_summaries": [{"name": "value", "point": 0, "maxpoint": 20}, {"name": "competitive", "point": 13.5, "maxpoint": 17}, {"name": "future", "point": 6, "maxpoint": 10.5}, {"name": "financials", "point": 8.5, "maxpoint": 10.5}, {"name": "dividend", "point": 5.5, "maxpoint": 19}, {"updatedAt": "2024-02-09T11:18:40.843Z"}], "company_growth_forecasts": null, "company_value_forecasts": null, "wsj_format": 1}
+{
+    "symbol": "BYAN.JK",
+    "nologo": false,
+    "company_name": "Bayan Resources Tbk",
+    "listing_board": "Main",
+    "industry": "Coal",
+    "sub_industry": "Coal Production",
+    "sector": "Energy",
+    "sub_sector": "Oil, Gas & Coal",
+    "market_cap": 645832688795648,
+    "market_cap_rank": 5,
+    "address": "Gedung Office 8, Lantai 37 Unit A-H Jl. Senopati No. 8B, Senayan, Kebayoran Baru, Jakarta Selatan 12950 - Indonesia",
+    "employee_num": 3441,
+    "listing_date": "2008-08-12",
+    "website": "www.bayan.com.sg",
+    "phone": "021-2935 6888",
+    "email": "corporate.secretary@bayan.com.sg",
+    "last_close_price": 19375,
+    "latest_close_date": "2024-02-26",
+    "daily_close_change": -0.00895140664961637,
+    "forward_pe": null,
+    "enterprise_to_revenue": 10.212420852299722,
+    "enterprise_to_ebitda": 21.279675448253908,
+    "peg_ratio": -0.40715910584254,
+    "analyst_rating": null,
+    "price_cash_flow": 34.90396389318351,
+    "interest_coverage_ratio": 871.7880060516675,
+    "der_mrq": 0.0,
+    "cash_flow_debt_ratio": null,
+    "employee_num_rank": 117,
+    "key_executives": [
+        {
+            "name": "Dato' Dr. Low Tuck Kwong",
+            "position": "President Director"
+        },
+        {
+            "name": "Jenny Quantero",
+            "position": "Director"
+        },
+        {
+            "name": "Lim Chai Hock",
+            "position": "Director"
+        },
+        {
+            "name": "Low Yi Ngo",
+            "position": "Director"
+        },
+        {
+            "name": "Russell John Neil",
+            "position": "Director"
+        },
+        {
+            "name": "Alastair Gordon Christopher Mcleod",
+            "position": "Director"
+        },
+        {
+            "name": "Kim, Sung Kook",
+            "position": "Director"
+        },
+        {
+            "name": "Alexander Ery Wibowo",
+            "position": "Director"
+        },
+        {
+            "name": "Oliver Khaw Kar Heng",
+            "position": "Director"
+        },
+        {
+            "name": "Lee Minhyung",
+            "position": "Director"
+        },
+        {
+            "name": "Merlin",
+            "position": "Director"
+        },
+        {
+            "name": "Ulina Fitriani",
+            "position": "Director"
+        }
+    ],
+    "executives_shareholdings": [
+        {
+            "name": "Alastair G.C. Mcleod",
+            "position": "Director",
+            "share_amount": 5000000,
+            "share_percentage": 0.0001
+        },
+        {
+            "name": "Alexander Ery Wibowo Sh, Llm",
+            "position": "Director",
+            "share_amount": 1000000,
+            "share_percentage": 0
+        },
+        {
+            "name": "Dato'            Dr Low Tuck Kwong",
+            "position": "Director",
+            "share_amount": 20352515570,
+            "share_percentage": 0.6106
+        },
+        {
+            "name": "Jenny Quantero",
+            "position": "Director",
+            "share_amount": 994975000,
+            "share_percentage": 0.0298
+        },
+        {
+            "name": "Lim Chai Hock",
+            "position": "Director",
+            "share_amount": 1086940000,
+            "share_percentage": 0.0326
+        },
+        {
+            "name": "Low Yi Ngo",
+            "position": "Director",
+            "share_amount": 61599800,
+            "share_percentage": 0.0019
+        },
+        {
+            "name": "Merlin",
+            "position": "Director",
+            "share_amount": 2002000,
+            "share_percentage": 0.0001
+        },
+        {
+            "name": "Oliver Khaw Kar Heng",
+            "position": "Director",
+            "share_amount": 617600,
+            "share_percentage": 0
+        },
+        {
+            "name": "Russell Neil",
+            "position": "Director",
+            "share_amount": 5000000,
+            "share_percentage": 0.0001
+        },
+        {
+            "name": "Ulina Fitriani",
+            "position": "Director",
+            "share_amount": 10000000,
+            "share_percentage": 0.0003
+        }
+    ],
+    "major_shareholders": [
+        {
+            "name": "Dato'            Dr Low Tuck Kwong",
+            "share_value": 394329989168750,
+            "share_amount": 20352515570,
+            "share_percentage": "0.6106"
+        },
+        {
+            "name": "Public (Scripless)",
+            "share_value": 144930909956250,
+            "share_amount": 7480305030,
+            "share_percentage": "0.2244"
+        },
+        {
+            "name": "Pt Sumber Suryadana Prima",
+            "share_value": 64584237500000,
+            "share_amount": 3333380000,
+            "share_percentage": "0.1"
+        },
+        {
+            "name": "Lim Chai Hock",
+            "share_value": 21059462500000,
+            "share_amount": 1086940000,
+            "share_percentage": "0.0326"
+        },
+        {
+            "name": "Jenny Quantero",
+            "share_value": 19277640625000,
+            "share_amount": 994975000,
+            "share_percentage": "0.0298"
+        },
+        {
+            "name": "Low Yi Ngo",
+            "share_value": 1193496125000,
+            "share_amount": 61599800,
+            "share_percentage": "0.0019"
+        },
+        {
+            "name": "Ulina Fitriani",
+            "share_value": 193750000000,
+            "share_amount": 10000000,
+            "share_percentage": "0.0003"
+        },
+        {
+            "name": "Merlin",
+            "share_value": 38788750000,
+            "share_amount": 2002000,
+            "share_percentage": "0.0001"
+        },
+        {
+            "name": "Alastair G.C. Mcleod",
+            "share_value": 96875000000,
+            "share_amount": 5000000,
+            "share_percentage": "0.0001"
+        },
+        {
+            "name": "Russell Neil",
+            "share_value": 96875000000,
+            "share_amount": 5000000,
+            "share_percentage": "0.0001"
+        }
+    ],
+    "ownership_percentage": {
+        "Others": 0.2244,
+        "Insiders": 0.7755,
+        "Institutions": 0.0001
+    },
+    "historical_valuation": [
+        {
+            "pb": 4.41568779106221,
+            "pe": 11.168094813733,
+            "ps": 2.6316048451595,
+            "year": 2020,
+            "pb_peer_avg": 0.986014572029268,
+            "pe_peer_avg": 4.57987497294454,
+            "ps_peer_avg": 1.26934002964985
+        },
+        {
+            "pb": 3.51694996388098,
+            "pe": 5.22042226681735,
+            "ps": 2.2197233549633,
+            "year": 2021,
+            "pb_peer_avg": 1.21795893899591,
+            "pe_peer_avg": 4.99837111638049,
+            "ps_peer_avg": 1.34063593211736
+        },
+        {
+            "pb": 23.8555227743746,
+            "pe": 20.7463549322419,
+            "ps": 9.60863932795161,
+            "year": 2022,
+            "pb_peer_avg": 1.31973994157193,
+            "pe_peer_avg": 4.93068187642478,
+            "ps_peer_avg": 1.25639596737423
+        },
+        {
+            "pb": 20.2066164945781,
+            "pe": 28.9571398773854,
+            "ps": 10.2888027111249,
+            "year": 2023,
+            "pb_peer_avg": 1.09267459570405,
+            "pe_peer_avg": 6.34067918891877,
+            "ps_peer_avg": 1.02450868941951
+        }
+    ],
+    "historical_financials": [
+        {
+            "tax": 1074701111617,
+            "year": 2019,
+            "revenue": 19318745251140,
+            "earnings": 3101272436452,
+            "cash_only": null,
+            "total_debt": 5047837514220,
+            "fixed_assets": 10529388733852,
+            "gross_profit": 6793561347364,
+            "total_assets": 17742391438721,
+            "total_equity": 8594380087309,
+            "operating_pnl": 4394393355047,
+            "total_liabilities": 9148011351412,
+            "current_liabilities": 8064858796186,
+            "earnings_before_tax": 4326139060328,
+            "cash_and_equivalents": 2422350989154,
+            "total_cash_and_due_from_banks": null
+        },
+        {
+            "tax": 1154570001687,
+            "year": 2020,
+            "revenue": 19601347099995,
+            "earnings": 4618782420845,
+            "cash_only": null,
+            "total_debt": 5641829463289,
+            "fixed_assets": 11948826218184,
+            "gross_profit": 6503266010715,
+            "total_assets": 22757143158909,
+            "total_equity": 12104834035228,
+            "operating_pnl": 4005289554926,
+            "total_liabilities": 10652309123681,
+            "current_liabilities": 3325572177451,
+            "earnings_before_tax": 5994232578740,
+            "cash_and_equivalents": 5392532063890,
+            "total_cash_and_due_from_banks": null
+        },
+        {
+            "tax": 5140540263807,
+            "year": 2021,
+            "revenue": 40545593124819,
+            "earnings": 17239984698569,
+            "cash_only": null,
+            "total_debt": 0,
+            "fixed_assets": 14432654767393,
+            "gross_profit": 27024735250352,
+            "total_assets": 34596316823433,
+            "total_equity": 26482054601869,
+            "operating_pnl": 23857448402664,
+            "total_liabilities": 8114262221564,
+            "current_liabilities": 6439340660742,
+            "earnings_before_tax": 23136695047741,
+            "cash_and_equivalents": 13938354445249,
+            "total_cash_and_due_from_banks": null
+        },
+        {
+            "tax": 9969888153448,
+            "year": 2022,
+            "revenue": 72851105771417,
+            "earnings": 33740866879325,
+            "cash_only": null,
+            "total_debt": 0,
+            "fixed_assets": 23929974187274,
+            "gross_profit": 48944092569624,
+            "total_assets": 61108447653482,
+            "total_equity": 30903657119953,
+            "operating_pnl": 45568995504038,
+            "total_liabilities": 30204790533530,
+            "current_liabilities": 28367139556804,
+            "earnings_before_tax": 45617843663894,
+            "cash_and_equivalents": 28295214295687,
+            "total_cash_and_due_from_banks": null
+        }
+    ],
+    "self_financial_info": {
+        "pb_mrq": 20.2066164945781,
+        "pe_ttm": 28.9571398773854,
+        "symbol": "BYAN.JK",
+        "dar_mrq": 0,
+        "der_mrq": 0,
+        "roa_ttm": 0.5084245984583284,
+        "roe_ttm": 0.6643742204175902,
+        "market_cap": 645832688795648,
+        "company_name": "Bayan Resources Tbk",
+        "total_assets": 43866986877595,
+        "total_equity": 33570018979363,
+        "total_revenue": 62770441510880,
+        "profit_and_loss": 22303055188818,
+        "yearly_mcap_chg": 0.0091135762432,
+        "total_liabilities": 10296967898233,
+        "financials_latest_date": "2023-09-30"
+    },
+    "historical_dividends": [
+        {
+            "year": 2019,
+            "breakdown": [
+                {
+                    "date": "2019-06-28",
+                    "total": 127.053,
+                    "yield": 0.0732543542981148
+                }
+            ],
+            "total_yield": 0.0732543542981148,
+            "total_dividend": 127.053
+        },
+        {
+            "year": 2020,
+            "breakdown": [
+                {
+                    "date": "2020-09-04",
+                    "total": 29.508,
+                    "yield": 0.0210032165050507
+                }
+            ],
+            "total_yield": 0.0210032165050507,
+            "total_dividend": 29.508
+        },
+        {
+            "year": 2021,
+            "breakdown": [
+                {
+                    "date": "2021-05-31",
+                    "total": 128.628,
+                    "yield": 0.0733693167567253
+                }
+            ],
+            "total_yield": 0.0733693167567253,
+            "total_dividend": 128.628
+        },
+        {
+            "year": 2022,
+            "breakdown": [
+                {
+                    "date": "2022-12-20",
+                    "total": 468.24,
+                    "yield": 0.0707644671201706
+                },
+                {
+                    "date": "2022-05-30",
+                    "total": 436.32,
+                    "yield": 0.0659404397010803
+                }
+            ],
+            "total_yield": 0.136704906821251,
+            "total_dividend": 904.56
+        },
+        {
+            "year": 2023,
+            "breakdown": [
+                {
+                    "date": "2023-12-18",
+                    "total": 232.74,
+                    "yield": 0.0123288882896304
+                },
+                {
+                    "date": "2023-05-09",
+                    "total": 354.168,
+                    "yield": 0.0187612678855658
+                }
+            ],
+            "total_yield": 0.0310901561751962,
+            "total_dividend": 586.908
+        }
+    ],
+    "annual_yield": [
+        {
+            "year": 2023,
+            "total": 586.908,
+            "yield": 0.0310901561751962
+        },
+        {
+            "year": 2022,
+            "total": 904.56,
+            "yield": 0.136704906821251
+        },
+        {
+            "year": 2021,
+            "total": 128.628,
+            "yield": 0.0733693167567253
+        },
+        {
+            "year": 2020,
+            "total": 29.508,
+            "yield": 0.0210032165050507
+        },
+        {
+            "year": 2019,
+            "total": 127.053,
+            "yield": 0.0732543542981148
+        }
+    ],
+    "yield_ttm": 0.0302920268397177,
+    "dividend_yield_avg": {
+        "period": 5,
+        "avg_yield": 0.0670843901112676
+    },
+    "payout_ratio": 0.877171353268749,
+    "cash_payout_ratio": 1.26352006263435,
+    "last_ex_dividend_date": "2023-12-18",
+    "point_summaries": [
+        {
+            "name": "value",
+            "point": 0,
+            "maxpoint": 24.5
+        },
+        {
+            "name": "competitive",
+            "point": 10.5,
+            "maxpoint": 14
+        },
+        {
+            "name": "future",
+            "point": 6,
+            "maxpoint": 21
+        },
+        {
+            "name": "financials",
+            "point": 8.5,
+            "maxpoint": 10.5
+        },
+        {
+            "name": "dividend",
+            "point": 5.5,
+            "maxpoint": 19
+        },
+        {
+            "updatedAt": "2024-02-26T23:02:56.925Z"
+        }
+    ],
+    "company_growth_forecasts": null,
+    "company_value_forecasts": null,
+    "wsj_format": 1
+}
