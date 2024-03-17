@@ -1,5 +1,5 @@
 ---
-title: "New Markdown"
+title: "Report"
 author: "Ido Ali"
 date: "`r Sys.Date()`"
 output: html_document
@@ -9,55 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# To Do 
-
-[ ] See all data
-[ ] Ask ChatGPT to gain insights
-
-# Tasks
-
-Breaking down this:
-- Financial Strengths:
-  + Very low valuation metrics compared to peers.
-  + Positive net earnings and increasing revenue.
-- Financial Weaknesses:
-  + Market capitalization has decreased.
-- Analysis: 
-ADRO exhibits strong financial performance with very low valuation metrics, making it an attractive option for long-term investment despite the recent decrease in market capitalization.
-
-## Earnings Comparison (line plot)
-[x] Explain what earning is
-[x] Make Visualization comparing all earnings
-[x] Conclusion
-[x] Export image and fit them
-
-## P/E Comparison (bar plot)
-[x] Explain what P/E is
-[x] Make Visualization comparing all P/Es
-[x] Conclusion
-[x] Export image and fit them
-
-## P/B Comparison (bar plot)
-[x] Explain what P/B is
-[x] Make Visualization comparing all P/Bs
-[x] Conclusion
-[x] Export image and fit them
-
-## P/S Comparison
-[x] Explain what P/S is
-[x] Make Visualization comparing all P/Ss
-[x] Conclusion
-[x] Export image and fit them
-
-Others
-[ ] Write background
-[ ] Write comments to all code
-[ ] Mention Sectors App as the data source
-
-Conclusion
-`BYAN.JK` is overvalued. 
-
-# Background
+# Introduction
 
 Investing in Indonesia's energy sector is really important because since it helps the country grow economically, creates jobs, and powers up industries. But Indonesia has some challenges in keeping up with its energy needs, so investing locally is key to making sure Indonesia have enough energy and don't rely too much on imports.
 
@@ -112,7 +64,6 @@ font_add(family = "fa-brands", regular = fa_path)
 
 showtext_auto(enable = TRUE)
 ```
-
 
 ## Earnings
 
@@ -213,7 +164,7 @@ valuation %>%
   geom_textbox(x = 15, y = stock_fullnames[4],
             label = "<b>Bayan</b> is 4 times bigger\nthan <b>Dian</b>",
             fill = txt_col, color = bg_col) +
-  geom_text(aes(x = pb + 1, y = reorder(company, pb), label = paste0(round(pb, 1), "%")),
+  geom_text(aes(x = pb + 1, y = reorder(company, pb), label = round(pb, 1)),
             color = txt_col) +
   scale_fill_manual(values = colors) +
   labs(title = "<b>Bayan</b> Is Overvalued",
@@ -252,7 +203,7 @@ valuation %>%
   geom_textbox(x = 20, y = stock_fullnames[4],
             label = "<b>Bayan Resources Tbk</b> P/B ratio is far bigger than others",
             fill = txt_col, text.colour = bg_col, halign = 0.5) +
-  geom_text(aes(x = pe + 1, y = reorder(company, pe), label = paste0(round(pe, 1), "%")),
+  geom_text(aes(x = pe + 1, y = reorder(company, pe), label = round(pe, 1)),
             color = txt_col) +
   scale_fill_manual(values = colors) +
   labs(title = "<b>P/B Ratio</b> Comparison",
@@ -288,7 +239,7 @@ valuation %>%
   geom_textbox(x = 6, y = stock_fullnames[4],
             label = "<b>Bayan Resources Tbk</b> P/S ratio is far bigger than others",
             fill = txt_col, color = bg_col) +
-  geom_text(aes(x = ps + 0.5, y = reorder(company, ps), label = paste0(round(ps, 1), "%")),
+  geom_text(aes(x = ps + 0.5, y = reorder(company, ps), label = round(ps, 1)),
             color = txt_col) +
   scale_fill_manual(values = colors) +
   labs(title = "<b>P/S Ratio</b> Comparison",

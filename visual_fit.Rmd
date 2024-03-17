@@ -131,7 +131,7 @@ pb_vis <- valuation %>%
   geom_textbox(x = 15, y = stock_fullnames[4],
             label = "<b>Bayan</b> is 4 times bigger\nthan <b>Dian</b>",
             fill = txt_col, color = bg_col, size = 15, lineheight = 0.3, hjust = 0.5) +
-  geom_text(aes(x = pb + 1, y = reorder(company, pb), label = paste0(round(pb, 1), "%")),
+  geom_text(aes(x = pb + 1, y = reorder(company, pb), label = round(pb, 1)),
             color = txt_col, size = 15) +
   scale_fill_manual(values = colors) +
   labs(title = "<b>Bayan</b> Is Overvalued",
@@ -163,7 +163,7 @@ pe_vis <- valuation %>%
             label = "<b>Bayan Resources Tbk</b> P/B ratio is far bigger than others",
             fill = txt_col, text.colour = bg_col, halign = 0.5, size = 15,
             lineheight = 0.3) +
-  geom_text(aes(x = pe + 1, y = reorder(company, pe), label = paste0(round(pe, 1), "%")),
+  geom_text(aes(x = pe + 1, y = reorder(company, pe), label = round(pe, 1)),
             color = txt_col, size = 15) +
   scale_fill_manual(values = colors) +
   labs(title = "<b>P/E Ratio</b> Comparison",
@@ -197,7 +197,7 @@ ps_vis <- valuation %>%
             label = "<b>Bayan Resources Tbk</b> P/S ratio is far bigger than others",
             fill = txt_col, color = bg_col, halign = 0.5, size = 15,
             lineheight = 0.3) +
-  geom_text(aes(x = ps + 0.5, y = reorder(company, ps), label = paste0(round(ps, 1), "%")),
+  geom_text(aes(x = ps + 0.5, y = reorder(company, ps), label = round(ps, 1)),
             color = txt_col, size = 15) +
   scale_fill_manual(values = colors) +
   labs(title = "<b>P/S Ratio</b> Comparison",
